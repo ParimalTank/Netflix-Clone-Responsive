@@ -1,3 +1,3 @@
 # Netflix-Clone-Responsive
 
-(Preview Link)[https://parimal-clone.netlify.app/]
+[Preview Link](https://parimal-clone.netlify.app/)

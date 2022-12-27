@@ -1,7 +1,6 @@
 *{
     padding : 0;
     margin : 0;
-
     /* it will calculate the width and it will adding padding and everything to 100% */
     box-sizing: border-box;  
 }
@@ -83,8 +82,6 @@ header div.select{
 }
 
 
-
-
 header div.select svg{
    height: 20px;
    fill: #fff; 
@@ -114,7 +111,7 @@ div.splash div.background{
 }
 
 div.splash div.background img{
-    max-width: 100%;
+    height: 100%;
     opacity: 0.6;
     object-fit: cover;
 }
@@ -122,7 +119,7 @@ div.splash div.background img{
 div.splash div.content{
     padding: 95px 20px;
     max-width: 655px;
-    margin: 0 auto;
+    margin: 15px auto;
     display: grid;
     align-items: center;
     text-align: center;
@@ -135,7 +132,7 @@ div.splash div.content{
     
     div.splash div.content{
         padding-top: 235px;
-        padding-bottom: 400px;
+        padding-bottom: 315px;
     }
 }
 
@@ -147,7 +144,8 @@ div.splash h1 , div.splash.h2 , div.splash.h3{
 
 div.splash h1{
     font-size: 1.75rem;
-    font-weight: normal;
+    font-weight: bold;
+    margin-top: 62px;
 }
 
 div.splash h2{
@@ -174,6 +172,7 @@ div.splash h3{
     
     div.splash h3{
         font-size: 1.2rem;
+        font-weight: normal;
     }
 }
 
@@ -181,8 +180,8 @@ div.splash h3{
 div.cta form{
     position: relative;
     display: grid;
-    grid-template-columns: 1fr max-content;
-    margin: 20px 20px 0;
+    grid-template-columns: 1fr;
+    margin: 20px 5px 0;
     row-gap: 15px;
 }
 
@@ -190,6 +189,7 @@ div.cta form{
     div.cta form{
         display: grid;
         grid-template-columns: 1fr max-content;
+        margin: 20px 20px 0;
     }
 }
 
@@ -221,9 +221,10 @@ div.cta input:focus ~ span{
 }
 
 div.cta button{
-    font-size: 1.625rem;
-    padding: 13.5px 30px;
+    font-size: 1rem;
+    padding: 10px 16px;
     background-color: #e50914;
+    border-radius: 2px;
     color: #fff;
     border: 0;
 }
@@ -232,6 +233,7 @@ div.cta button{
     div.cta button{
         font-size: 1.625rem;
         padding: 12px 26px;
+        border-radius: 0;
     }
 }
 
@@ -244,6 +246,7 @@ section{
     padding: 70px 35px;
     align-items: center;
     border-top: 8px solid #222;
+    text-align: center;
 }
 
 @media screen and (min-width:550px) {
@@ -308,6 +311,25 @@ section div.download{
     border: 2px solid #666;
     border-radius: 15px;
     padding: 10px;
+    height: 90px;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 300px;
+    left: 60%;
+    margin-left: -175px;
+    background-color: #000;
+    gap: 6px;
+    grid-template-columns: max-content 1fr max-content;
+}
+
+@media screen and (min-width:550px) {
+    section div.download{
+    border: 2px solid #666;
+    border-radius: 15px;
+    padding: 10px;
     height: 95px;
     display: grid;
     text-align: center;
@@ -320,7 +342,9 @@ section div.download{
     background-color: #000;
     gap: 6px;
     grid-template-columns: max-content 1fr max-content;
+    }
 }
+
 
 section div.download img{
     height: 75px;
@@ -335,11 +359,21 @@ section div.download img{
  }
  
  .media.s3 video{
-     width: 250px;
+     width: 60%;
      position: absolute;
      top: 36px;
      left: 72px;
  }
+
+ @media screen and (min-width:550px) {
+    .media.s3 video{
+        width: 250px;
+        position: absolute;
+        top: 36px;
+        left: 72px;
+    }
+}
+
 
 div.faq{
     padding: 70px 30px;
@@ -430,7 +464,9 @@ div.faq{
    margin: 0 auto;
 }
 
-
+div.faq form div+div {
+    text-align: center;
+}
 
 
 .footer {
@@ -465,18 +501,20 @@ div.faq{
   }
 
   .last{
-    margin-left: 15%; 
-    margin-top: 15%;
+    color:#999999;
+    display: flex;
+    font-size: 15px;
+    font-weight: normal;
+    margin-left: 17%; 
+    margin-top: 23%;
+    margin-bottom: 8%;
   }
 
-
-   /* For Desktop */
    @media screen and (min-width:550px){
     .last{
+        display: flex;
         margin-left: 15%; 
         margin-top: 7%;
-        margin-bottom: 23px;
-        color:#999999;
-        font-size: 15px;
+        margin-bottom: 2%;
       }    
  }

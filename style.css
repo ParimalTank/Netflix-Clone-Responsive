@@ -231,6 +231,7 @@ div.cta button{
     border-radius: 2px;
     color: #fff;
     border: 0;
+    cursor: pointer;
 }
 
 @media screen and (min-width : 550px) {
@@ -238,6 +239,7 @@ div.cta button{
         font-size: 1.625rem;
         padding: 13px 26px;
         border-radius: 0;
+        cursor: pointer;
     }
 }
 
